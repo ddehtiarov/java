@@ -1,0 +1,11 @@
+<title>${title}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="css/header.css">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="css/editbox.css">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="css/ticket.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

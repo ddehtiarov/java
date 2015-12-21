@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/jsp/admin/deleteClient.jsp=UTF-8
+encoding//WebContent/WEB-INF/jsp/admin/editClient.jsp=UTF-8
+encoding//WebContent/WEB-INF/jsp/client/settings.jsp=UTF-8
+encoding//WebContent/WEB-INF/jsp/error_page.jsp=UTF-8
+encoding//WebContent/WEB-INF/jsp/user/login.jsp=UTF-8
+encoding//WebContent/WEB-INF/jsp/user/register.jsp=UTF-8
+encoding//WebContent/WEB-INF/jspf/directive/page.jspf=UTF-8
+encoding//WebContent/WEB-INF/jspf/directive/taglib.jspf=UTF-8
+encoding//WebContent/WEB-INF/jspf/footer.jspf=UTF-8
+encoding//WebContent/WEB-INF/jspf/headContent.jspf=UTF-8
+encoding//WebContent/WEB-INF/jspf/header.jspf=UTF-8
+encoding//WebContent/css/autoComplete.css=UTF-8
+encoding//WebContent/css/editbox.css=UTF-8
+encoding//WebContent/css/header.css=UTF-8
+encoding//WebContent/css/ticket.css=UTF-8
+encoding//WebContent/index.jsp=UTF-8

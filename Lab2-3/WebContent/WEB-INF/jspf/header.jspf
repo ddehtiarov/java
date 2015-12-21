@@ -1,0 +1,50 @@
+<%@ include file="/WEB-INF/jspf/directive/page.jspf"%>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf"%>
+  
+<c:url var="login" value="controller?command=viewLoginPage" />
+<c:url var="register" value="controller?command=viewRegisterPage" />
+<c:url var="logout" value="controller?command=logout.do" />
+<c:url var="settings" value="controller?command=viewSettings" />
+<c:url var="users" value="controller?command=viewAllClients" />
+<div id="header" class="headerMain">
+	<c:if test="${not empty sessionScope.client}">
+		<div id="hmenu">
+			<ul>
+			<li><a href="${users}"><fmt:message key="header_jspf.admin.users" /></a></li>
+				<li><a href="${settings}"><fmt:message
+							key="header_jspf.client.settings" /></a></li>
+				<li><a href="${logout}"><fmt:message
+							key="header_jspf.client.logout" />,${sessionScope.client.login}</a></li>
+			</ul>
+		</div>
+	</c:if>
+	<c:if test="${empty sessionScope.client}">
+		<div id="hmenu">
+			<ul>
+				<li><a href="/Lab2-3/"><fmt:message
+							key="header_jspf.user.home" /></a></li>
+				<li><a href="${login}"><fmt:message
+							key="header_jspf.user.login" /></a></li>
+				<li><a href="${register}"><fmt:message
+							key="header_jspf.user.register" /></a></li>
+				<li><select id="language" name="locale">
+						<option value="en" ${sessionScope.defaultLocale == 'en' ? 'selected' : ''}>English</option>
+						<option value="ru" ${sessionScope.defaultLocale == 'ru' ? 'selected' : ''}>Russian</option>
+				</select></li>
+			</ul>
+		</div>
+		<script>
+			$("#language").change(function(){
+				var local = $(this).val();
+				$.get('/SummaryTask4/setLocale?locale=' + local, function(data) {
+					if(data == 'Ok') {
+						location.reload();
+					}
+				});
+			});
+			
+		</script>
+	</c:if>
+</div>
+
+<br>

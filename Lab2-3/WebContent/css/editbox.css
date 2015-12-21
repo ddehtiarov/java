@@ -1,0 +1,36 @@
+.msg {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: aliceblue;
+    background-color: #a5020c;
+    /*border-color: #bce8f1;*/
+}
+.success {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: aliceblue;
+    background-color: green;
+    /*border-color: #bce8f1;*/
+}
+#edit-box {
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    background: #cccccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    /*border: 1px solid #000;*/
+}
+#show-box {
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    background: #227755;
+    border-right: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+
+}

@@ -1,0 +1,42 @@
+<project name="Derby">
+	<property name="derby.home" value="C:\Program Files\Java\jre1.8.0_65\db" />
+	<property name="sql.home" location="D:\java-core_3-1\Lab2-3" />
+	<path id="derby.classpath">
+		<fileset dir="C:\Program Files\Java\jdk1.8.0_65\db\lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<macrodef name="server">
+		<attribute name="arg" />
+		<sequential>
+			<java classname="org.apache.derby.drda.NetworkServerControl">
+				<arg value="@{arg}" />
+				<classpath refid="derby.classpath" />
+			</java>
+		</sequential>
+	</macrodef>
+	<target name="server-start">
+		<server arg="start" />
+	</target>
+	<target name="server-stop">
+		<server arg="shutdown" />
+	</target>
+	<macrodef name="run">
+		<attribute name="script" />
+		<sequential>
+			<java classname="org.apache.derby.tools.ij" fork="on">
+				<arg value="@{script}" />
+				<classpath refid="derby.classpath" />
+			</java>
+		</sequential>
+	</macrodef>
+	<target name="run-db-create">
+		<run script="${sql.home}/sql/db-create.sql" />
+	</target>
+	<target name="run-select">
+		<run script="${sql.home}/sql/select-all-db.sql" />
+	</target>
+	<target name="run-db-insert">
+		<run script="${sql.home}/sql/db-insert.sql" />
+	</target>
+</project>
