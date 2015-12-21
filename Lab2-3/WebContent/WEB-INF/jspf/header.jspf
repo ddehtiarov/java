@@ -36,7 +36,7 @@
 		<script>
 			$("#language").change(function(){
 				var local = $(this).val();
-				$.get('/SummaryTask4/setLocale?locale=' + local, function(data) {
+				$.get('/Lab2-3/setLocale?locale=' + local, function(data) {
 					if(data == 'Ok') {
 						location.reload();
 					}

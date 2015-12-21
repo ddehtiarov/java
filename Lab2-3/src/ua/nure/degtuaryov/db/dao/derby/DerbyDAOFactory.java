@@ -32,7 +32,7 @@ public class DerbyDAOFactory extends DAOFactory {
 			Context initContext = new InitialContext();
 			Context envContext = (Context) initContext.lookup("java:/comp/env");
 			LOG.debug("Connection~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-			DataSource ds = (DataSource) envContext.lookup("jdbc/db/bookingDB");
+			DataSource ds = (DataSource) envContext.lookup("jdbc/db/rzgi");
 			con = ds.getConnection();
 		} catch (NamingException ex) {
 

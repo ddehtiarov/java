@@ -1,14 +1,5 @@
-CONNECT 'jdbc:derby://localhost:1527/db/bookingDB;create=true;user=root;password=root';
+CONNECT 'jdbc:derby://localhost:1527/db/rzgi;create=true;user=root;password=root';
 
-drop table Booking;
-drop table Seat;
-drop table Trip;
-drop table Voyage;
-drop table Station_route;
-drop table Route;
-drop table Benefit;
-drop table Train;
-drop table Station;
 drop table Client;
 drop table Role;
 

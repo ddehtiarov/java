@@ -1,4 +1,4 @@
-CONNECT 'jdbc:derby://localhost:1527/db/bookingDB;create=true;user=root;password=root';
+CONNECT 'jdbc:derby://localhost:1527/db/rzgi;create=true;user=root;password=root';
 
 INSERT INTO Role VALUES(0, 'admin');
 INSERT INTO Role VALUES(1, 'user');

@@ -60,7 +60,6 @@ public class LoginCommand extends Command {
 				clientRole = Role.getRole(client);
 				LOG.debug("LoginCommand:" + client);
 				forward = Path.COMMAND_VIEW_ALL_CLIENTS;
-				
 			} else {
 				request.setAttribute(WRONG, rb.getString("login_client_page.login_error"));
 				forward = Path.COMMAND_VIEW_LOGIN_PAGE;
